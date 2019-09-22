@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css">
+	<title>Dual Signature</title>
+	
+	
+<style>
+
+
+.border1 {
+	width: 10%;
+	border-bottom: 5px solid #f55252;
+	float: left;
+}
+
+.border2 {
+	width: 20%;
+	border-bottom: 5px solid #168add;
+	float: left;
+}
+.border3 {
+	width: 70%;
+	border-bottom: 5px solid #f6c815;
+	float: left;
+}
+</style>
+
+</head>
+<body>
+	<div class="container">
+	<div class="well">
+
+ <div class="row">	 
+  <div class="col-md-11" > 	
+	<h3 style=" text-align:center; color:; font-weight: 700; letter-spacing: 0; line-height: 22px; font-size: 28px; font-family: Raleway,sans-serif;">DUAL SIGNATURE GENERATION</h3>
+  </div>
+</div>
+
+<div class="border1"></div>
+<div class="border2"></div>
+<div class="border3"></div>
+
+</div>
+<br>
+
+
+	<div class="jumbotron">
+	<div class="row content">
+	<div class="col-md-2">
+	</div>
+	
+	<div class="col-md-10">
+        <form class="form-horizontal" action="http://127.0.0.1:5000/dual_signature" method="POST">
+		
+			<div class="row content">
+			<div class="col-md-8">
+            <h3 style="font-weight: bold; text-align: center;">ENTER ORDER INFORMATION:</h3><br>
+			</div>
+			</div>
+			
+            <div class="row content">
+			<div class="col-md-3 ">
+                    <label>Enter Order ID:</label>
+			</div>
+			<div class="col-md-5">
+                     <input class="form-control" type="number" name="orderid" required="required">
+			</div>
+			</div>
+            <br>
+			
+            <div class="row content">
+			<div class="col-md-3">
+                    <label>Enter Product Id:</label>     
+			</div>
+			<div class="col-md-5">
+                   <input class="form-control" type="number" name="productid" required="required">
+            </div>
+			</div>
+			<br>
+			
+            <div class="row content">
+			<div class="col-md-3">
+                    <label>Enter Product Cost:</label>
+			</div>
+			<div class="col-md-5">
+                    <input class="form-control" type="number" name="ordercost" required="required">
+            </div>
+			</div>
+			<br>
+
+			
+			<div class="row content">
+			<div class="col-md-8">
+            <h3 style="font-weight: bold; text-align: center;">ENTER PAYMENT INFORMATION:</h3><br>
+			</div>
+			</div>
+
+            <div class="row content">
+			<div class="col-md-3">
+                    <label>Enter Credit Card:</label>
+			</div>
+			<div class="col-md-5">
+					<input class="form-control" type="number" name="creditcard" required="required">
+            </div>
+			</div>
+			<br>
+			
+            <div class="row content">
+			<div class="col-md-3">
+                    <label>Enter CVV:</label>  
+			</div>
+			<div class="col-md-5">
+                    <input class="form-control" type="number" name="cvv" required="required">
+             </div>
+			 </div>
+			 <br>
+			 
+            <div class="row content">
+			<div class="col-md-3">
+                    <label>Enter Expiry Month:</label>
+			</div>
+			<div class="col-md-5">
+                  <input class="form-control" type="number" name="expiry" required="required">
+            </div>
+			</div>
+			
+			<br><br>
+			<div class="row content">
+				<div class="col-md-4">
+					<button class="btn btn-primary btn-block" type="submit" value='Submit'>Submit</button>
+				</div>
+				<div class="col-md-4">
+					<button class="btn btn-primary btn-block" type="reset" value='Submit'>Reset</button>
+				</div>
+			</div>
+        </form>
+		</div>
+		</div>
+		</div>
+		</div>
+    </body>
+</html>
